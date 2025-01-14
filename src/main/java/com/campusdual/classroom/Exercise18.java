@@ -4,12 +4,7 @@ public class Exercise18 {
 
     public static void main(String[] args) {
         //se invocan los métodos
-        createAndInitializeArray(5);
-
-        //utilizo este array commo ejemplo
-        int[] array = {40, 50, 60, 80, 100};
-        showInlineArray(array);
-
+        showInlineArray(createAndInitializeArray(5));
     }
 
     //Crear un metodo llamado createAndInitializeArray() que reciba por parámetro un número entero
@@ -34,7 +29,7 @@ public class Exercise18 {
 
         for (int i = 0; i < array.length; i++) {//recorro o array cun for
 
-            System.out.print("numero" + array[i]);//imprimo os resultados nunha sola linea
+            System.out.print(array[i]);//imprimo os resultados nunha sola linea
 
             if (i < array.length - 1) {//verifico que o indice i é menor que o índice do ultimo elemento do array.
                 //if true, non estamos no último elemento
